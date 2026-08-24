@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:wght@600;700&display=swap');
+
+body {
+  font-family: "DM Sans", sans-serif;
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    /* C&G Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 207 100% 15%;
+    
+    /* Primary: Deep Blue #003D7A */
+    --primary: 210 100% 24%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Accent: Orange #FF9500 */
+    --accent: 35 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Secondary: Light Blue */
+    --secondary: 210 80% 96%;
+    --secondary-foreground: 210 100% 24%;
+    
+    /* Muted: Light Gray */
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 10% 45%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 207 100% 15%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 207 100% 15%;
+    
+    /* Border */
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 100% 24%;
+    
+    /* Radius */
+    --radius: 0.75rem;
+  }
+  
+  .dark {
+    --background: 207 45% 8%;
+    --foreground: 0 0% 98%;
+    
+    --primary: 210 90% 35%;
+    --primary-foreground: 0 0% 100%;
+    
+    --accent: 35 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    --secondary: 210 40% 15%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 210 30% 18%;
+    --muted-foreground: 210 10% 65%;
+    
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --card: 207 40% 12%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 207 40% 12%;
+    --popover-foreground: 0 0% 98%;
+    
+    --border: 207 30% 22%;
+    --input: 207 30% 22%;
+    --ring: 210 90% 45%;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .professional-card {
+    @apply bg-card rounded-xl border border-border shadow-sm hover:shadow-lg transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 active:scale-[0.98] transition-all duration-200 rounded-lg px-6 py-2.5 font-medium;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:brightness-110 active:scale-[0.98] transition-all duration-200 rounded-lg px-6 py-2.5 font-medium;
+  }
+
+  /* WhatsApp Official Button Style */
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 bg-[#25D366] text-white hover:bg-[#20bd5a] hover:shadow-md active:scale-[0.98] transition-all duration-200 rounded-lg px-6 py-3 font-medium;
+  }
+
+  /* Hero Section Base Styles */
+  .hero-container {
+    @apply relative min-h-[70vh] flex flex-col items-center justify-center px-4 py-24 overflow-hidden bg-primary text-primary-foreground;
+  }
+  
+  .hero-title {
+    @apply text-5xl md:text-6xl font-bold tracking-tight text-center max-w-5xl mx-auto leading-[1.15];
+  }
+
+  /* Pricing Table Styles */
+  .pricing-table-container {
+    @apply w-full overflow-x-auto rounded-lg border border-border bg-card shadow-sm;
+  }
+
+  .pricing-table {
+    @apply w-full text-sm text-left border-collapse;
+  }
+
+  .pricing-th {
+    @apply px-4 py-3 font-semibold text-foreground bg-muted/50 border-b border-border whitespace-nowrap;
+  }
+
+  .pricing-td {
+    @apply px-4 py-3 text-muted-foreground border-b border-border/50 whitespace-nowrap;
+  }
+
+  .pricing-tr {
+    @apply hover:bg-muted/30 transition-colors duration-150;
+  }
+  
+  .pricing-tr:last-child .pricing-td {
+    @apply border-b-0;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-fade-in-scale {
+    animation: fadeInScale 0.8s ease-out forwards;
+  }
+}
