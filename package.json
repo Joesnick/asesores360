@@ -6,7 +6,7 @@
     "setup": "npm install",
     "dev": "concurrently --kill-others --raw \"npm run dev --prefix apps/web\"",
     "build": "concurrently --raw \"npm run build --prefix apps/web\"",
-    "start": "serve -s apps/web/dist -l $PORT",
+    "start": "serve -s dist/apps/web -l $PORT",
     "lint": "concurrently --raw \"npm run lint --prefix apps/web\""
   },
   "devDependencies": {
