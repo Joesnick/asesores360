@@ -40,7 +40,7 @@ pnpm-debug.log*
 *.sln
 *.swp
 *.swo
-vault/temp/
+vault/
 
 # ==============================================================================
 # Coberturas de Pruebas y Diagnóstico
