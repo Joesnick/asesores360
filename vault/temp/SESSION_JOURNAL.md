@@ -201,3 +201,45 @@
         at https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:932:179
         at https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:241:7
 
+## 2026-08-24 16:30:54.988Z load
+- url: http://localhost:3000/
+- title: Asesores360
+
+## 2026-08-24 16:31:00.493Z network.error
+- method: POST
+- url: https://www.google-analytics.com/g/collect?v=2&tid=G-X4ZKS4FZ56&gtm=45je68j1v9251628947za200zd9251628947&_p=1787589054885&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1571492307.1787583998&frm=0&ngs=1&pscdl=noapi&rcb=0&sr=1536x864&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CMicrosoft%2520Edge%3B151.0.4129.101%7CChromium%3B151.0.7922.170&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=es&_s=1&tag_exp=115938466~115938469~118897920~118897930~119367802~119367810~119791749~120315471~120385423&sid=1787589054&sct=3&seg=1&dl=http%3A%2F%2Flocalhost%2F&dr=http%3A%2F%2Flocalhost%3A3000%2F&dt=ASESORES360.COM.CO%20-%20Portal%20de%20Aplicaciones%20Contables%20y%20Jur%C3%ADdicas&en=page_view&_ee=1&tfd=5744
+- message: Failed to fetch
+- durationMs: 4
+
+## 2026-08-24 16:31:00.493Z console.error
+- text: 
+    TypeError: Failed to fetch
+        at window.fetch (http://localhost:3000/@id/virtual:session-journal-client:328:28)
+        at window.fetch (http://localhost:3000/:497:23)
+        at nd (https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:240:391)
+        at Zk (https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:392:1277)
+        at $Q (https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:930:183)
+        at cR (https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:931:176)
+        at iR.flush (https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:939:82)
+        at https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:937:343
+
+## 2026-08-24 16:31:00.496Z network.error
+- method: POST
+- url: https://www.google.com/g/collect?v=2&tid=G-X4ZKS4FZ56&gtm=45je68j1v9251628947za200zd9251628947&_p=1787589054885&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&are=1&cid=1571492307.1787583998&frm=0&ngs=1&pscdl=noapi&rcb=0&sr=1536x864&uaa=x86&uab=64&uafvl=Not%253DA%253FBrand%3B99.0.0.0%7CMicrosoft%2520Edge%3B151.0.4129.101%7CChromium%3B151.0.7922.170&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=es&_s=1&tag_exp=115938466~115938469~118897920~118897930~119367802~119367810~119791749~120315471~120385423&sid=1787589054&sct=3&seg=1&dl=http%3A%2F%2Flocalhost%2F&dr=http%3A%2F%2Flocalhost%3A3000%2F&dt=ASESORES360.COM.CO%20-%20Portal%20de%20Aplicaciones%20Contables%20y%20Jur%C3%ADdicas&en=page_view&_ee=1&tfd=5744&gaf=1
+- message: Failed to fetch
+- durationMs: 2
+
+## 2026-08-24 16:31:00.496Z console.error
+- text: 
+    TypeError: Failed to fetch
+        at window.fetch (http://localhost:3000/@id/virtual:session-journal-client:328:28)
+        at window.fetch (http://localhost:3000/:497:23)
+        at nd (https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:240:391)
+        at Zk (https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:392:1277)
+        at $Q (https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:930:183)
+        at https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:932:179
+        at https://www.googletagmanager.com/gtag/js?id=G-X4ZKS4FZ56:241:7
+
+## 2026-08-24 16:31:01.603Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"ASESORES360.COM.COC&G - Grupo Contable y Jurídico S.A.S.InicioAplicacionesNóminaPolla FutboleraContactar"}
+
